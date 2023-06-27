@@ -1,0 +1,1 @@
+document.getElementById('contenedor').style.backgroundColor='black';
