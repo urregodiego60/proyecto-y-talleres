@@ -1,0 +1,10 @@
+<?php
+
+$host ="local host"
+
+
+
+
+
+
+?>
