@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27010df775.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="research_books_22128.ico" type="image/x-icon">
+    <title>Education Center - Formulario de Inscripción</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <ul class="lista-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="oferta.html">OFERTA</a></li>
+                <li><a href="formulario_inscribete.html">INSCRIBETE</a></li> <!-- Enlace al nuevo archivo de formulario -->
+                <li><a href="contactenos.html">CONTACTENOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h1 class="form-title">Formulario de Inscripción</h1>
+        <form action="registrar_inscripcion.php" method="POST" class="form">
+            <label for="document-type">Tipo de Documento</label>
+            <select name="document-type" id="document-type" required>
+                <option value="cc">Cédula de Ciudadanía</option>
+                <option value="ti">Tarjeta de Identidad</option>
+                <option value="ce">Cédula de Extranjería</option>
+                <option value="pas">Pasaporte</option>
+            </select>
+            <label for="document-number">Número de Documento</label>
+            <input type="text" id="document-number" name="document-number" required>
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres" required>
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" id="Apellidos" name="Apellidos" required>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" required>
+            <label for="ultimo_grado">Último Grado Cursado</label>
+            <select name="ultimo_grado" id="ultimo_grado" required>
+                <option value="primero">Primero de Primaria</option>
+                <option value="segundo">Segundo de Primaria</option>
+                <option value="tercero">Tercero de Primaria</option>
+                <option value="cuarto">Cuarto de Primaria</option>
+                <option value="quinto">Quinto de Primaria</option>
+                <option value="sexto">Sexto</option>
+                <option value="septimo">Séptimo</option>
+                <option value="octavo">Octavo</option>
+                <option value="noveno">Noveno</option>
+                <option value="decimo">Décimo</option>
+            </select>
+            <label for="jornada">Jornada</label>
+            <select name="jornada" id="jornada" required>
+                <option value="diurna">Diurna</option>
+                <option value="nocturna">Nocturna</option>
+                <option value="mixta">Mixta</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </footer>
+</body>
+</html>

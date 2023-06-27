@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(240, 169, 1);
+    background: -moz-radial-gradient(circle, rgba(240, 169, 1, 1) 0%, rgba(214, 126, 2, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(240, 169, 1, 1) 0%, rgba(214, 126, 2, 1) 100%);
+    background: radial-gradient(circle, rgba(240, 169, 1, 1) 0%, rgba(214, 126, 2, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0a901", endColorstr="#d67e02", GradientType=1);
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.logo {
+    width: 70px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.main-css {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 80px 50px;
+}
+
+.lista-links {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.lista-links li {
+    margin-left: 20px;
+}
+
+.lista-links li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenidopagina-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    max-width: 300px;
+    margin-right: auto;
+}
+
+
+.contenido-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    max-width: 300px;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.contenidopagina-izquierda,
+.contenido-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenido-derecha h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contenido-derecha h3,
+.contenido-derecha h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-style: italic;
+    color: #0e0d0d;
+    max-width: 300px;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-carrusel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#carouselIndicators {
+    max-width: 100%;
+}
+
+.frase-destacada {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.contenedor-imagen {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    object-fit: contain;
+    width: 100%;
+    height: 350px;
+}
+
+button {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    color: #4CAF50;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+table i {
+    color: black;
+}
+
+.titulo-y-texto {
+    display: inline-flex;
+}
+
+.titulo-y-texto img {
+    height: 60px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    margin-top: 2px;
+    height: 60px;
+}
+
+footer .email {
+    display: inline-flex;
+    margin-left: 25px;
+}
+
+footer .email i {
+    color: blue;
+    font-size: 30px;
+}
+
+footer .email address {
+    padding-left: 10px;
+}
+
+footer .email address a {
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+footer .whasapt {
+    display: inline-flex;
+    margin-left: 35px;
+    margin-right: 0px;
+}
+
+footer .whasapt i {
+    color: #4CAF50;
+    font-size: 30px;
+}
+
+footer .whasapt number {
+    padding-left: 10px;
+}
+
+footer .whasapt number a {
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+footer .social-media {
+    width: auto;
+    height: 8px;
+    float: right;
+    margin-bottom: 30px;
+    margin-right: 25px;
+}
+
+footer .social-media i {
+    color: black;
+    font-size: 22px;
+    padding: 30px 10px 0px 10px;
+}

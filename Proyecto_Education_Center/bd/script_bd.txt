@@ -1,0 +1,15 @@
+create database centroeducacion;
+use centroeducacion;
+create table inscripciones(
+id int AUTO_INCREMENT primary key,
+tipo_documento varchar(25),
+numero_documento varchar(25),
+nombres varchar(60),
+apellidos varchar(60),
+edad int,
+grado varchar(35),
+jornada varchar(15)
+);
+
+INSERT into inscripciones (tipo_documento,numero_documento,nombres,apellidos,edad,grado,jornada) VALUES ('cedula','1010101010','juan andres','linares perez',26,'Primero de Primaria','Diurna');
+alter table inscripciones add CONSTRAINT uk_numero_documento UNIQUE (numero_documento);
